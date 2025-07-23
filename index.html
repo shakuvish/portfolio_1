@@ -1,0 +1,257 @@
+<!--
+Title: Shashank Vishwakarma's Portfolio
+Author: Shashank Vishwakarma
+Description: This file contains the structure of my personal portfolio website.
+-->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Shashank Vishwakarma | Portfolio</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Shashank Vishwakarma's personal portfolio website showcasing projects, skills, and experience in AI, Machine Learning, and Software Development.">
+  <meta name="author" content="Shashank Vishwakarma">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/effects.css">
+  <link rel="stylesheet" href="assets/css/retro.css">
+</head>
+<body>
+  <section id="top" class="hero">
+    <div id="hero-overlay">
+      <section class="navigation">
+        <header>
+        </header>
+      </section>
+      <!-- This span tag wraps the entire page content and is closed in the footer. It is essential for the original template's layout. -->
+      <span id="to-top">
+        <div class="down-arrow floating-arrow">
+          <a href="#about">
+            <i class="fa fa-chevron-down" aria-hidden="true">
+            </i>
+          </a>
+        </div>
+        <div class="hero-text" id="fadein">
+          <h1>Shashank Vishwakarma</h1>
+          <h2>AI/ML Engineer & Researcher</h2>
+          <br>
+          <a href="shashank_cv_june_end.pdf" class="btn" target="_blank">Download Resume</a>
+        </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="heading">About Me</h2>
+    <p>
+      STUDENT  OF COMPUTER SCIENCE AND ENGINEERING . LOVE READING PAPERS AND IMPLEMENTING THEM FROM SCRATCH . INTERESTED IN MATHS AND LOVE CALCULUS . 
+    </p>
+  </section>
+
+  <div id="education" class="background-alt">
+    <h2 class="heading">Education</h2>
+    <div id="education-timeline">
+      <div data-date="2021 – Present">
+        <h3>Gautam Buddha University, Greater Noida</h3>
+        <h4>Integrated B.Tech-M.Tech, Computer Science and Engineering</h4>
+        <p>
+          <strong>Grade:</strong> A+<br>
+          <strong>Relevant Courses:</strong> Machine Learning, Deep Learning, NLP, Computer Vision, Meta-Heuristics, Probability.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- This section ID is "x-education" to match the original CSS styling for experience blocks -->
+  <div id="x-education">
+    <h2 class="heading">Work Experience</h2>
+    <div class="x-education-block shadow">
+      <div class="x-education-block-header" style="margin-bottom: 0.5em;">
+        <h3>LLM Intern @ Toeho.AI</h3>
+        <span class="x-education-date">May 2025 - Present</span>
+      </div>
+      <p style="margin-top:0.5em;">• Built a RAG system combining vector DBs and open-source LLMs.<br>• Developed a real-time Flask interface for user queries.<br>• Managed database schema and inference pipelines end-to-end.</p>
+    </div>
+    <div class="x-education-block shadow">
+      <div class="x-education-block-header" style="margin-bottom: 0.5em;">
+        <h3>Project Intern (IndicWIKI) @ IIIT Hyderabad</h3>
+        <span class="x-education-date">May 2025 - Present</span>
+      </div>
+      <p style="margin-top:0.5em;">• Automated article editing in low-resource Indian languages.<br>• Used Python NLP tools for NER, summarization, and fact-checking.<br>• Improved content quality and workflow speed.</p>
+    </div>
+    <div class="x-education-block shadow">
+      <div class="x-education-block-header" style="margin-bottom: 0.5em;">
+        <h3>Intern @ Department of Space (Govt. of India)</h3>
+        <span class="x-education-date">May 2025 - Present</span>
+      </div>
+      <p style="margin-top:0.5em;">• Classified satellite data using CNNs.<br>• Built ML-based anomaly detection for data integrity.<br>• Ensured reliable results for large-scale datasets.</p>
+    </div>
+    <div class="x-education-block shadow">
+      <div class="x-education-block-header" style="margin-bottom: 0.5em;">
+        <h3>Research Intern (Legal AI) @ IIT Kanpur</h3>
+        <span class="x-education-date">June 2024 - September 2024</span>
+      </div>
+      <p style="margin-top:0.5em;">• Fine-tuned Llama-2 on Indian legal documents.<br>• Curated datasets via web scraping.<br>• Trained models on CDAC Param Sanganak supercomputer.</p>
+    </div>
+    <div class="x-education-block shadow">
+      <div class="x-education-block-header" style="margin-bottom: 0.5em;">
+        <h3>Project Intern (Network Monitoring) @ IIT Kanpur</h3>
+        <span class="x-education-date">June 2023 - August 2023</span>
+      </div>
+      <p style="margin-top:0.5em;">• Built a real-time LAMP-based network monitoring tool.<br>• Implemented dynamic IP tracking and packet logging.<br>• Set up automated alerts for proactive management.</p>
+    </div>
+  </div>
+
+  <div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="grass"></div>
+    <div class="container">
+      <div class="row">
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="assets/img/fallback.jpg" alt="PaliGemma Project" />
+          </div>
+          <div class="project-info">
+            <h3>PaliGemma - Multimodal Vision-Language Model</h3>
+            <p>Ever wondered how your phone can recognize both your face and your voice? PaliGemma is my take on that magic—it's a Transformer model that can see and read at the same time! I built it by mixing CLIP, SigLip, and some clever tricks like KV-Caching and Top-P Sampling. Imagine an app that can look at a photo of a Mumbai street and instantly describe the scene in Hindi or English—auto-rickshaws, pani puri stalls, and all. That's the kind of real-world fun this project aims for!</p>
+            <a href="https://github.com/shakuvish" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="assets/img/fallback.jpg" alt="LongNet Project" />
+          </div>
+          <div class="project-info">
+            <h3>LongNet - Efficient Attention Scaling</h3>
+            <p>Transformers are cool, but they get tired with long stories. LongNet is my solution—using Dilated Attention, it can read and remember super-long texts, like the entire script of a Bollywood movie, without dozing off. This means smarter chatbots and better document analysis for everyone.</p>
+            <a href="https://github.com/shakuvish" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="assets/img/fallback.jpg" alt="Transformer from Scratch" />
+          </div>
+          <div class="project-info">
+            <h3>Transformer from Scratch</h3>
+            <p>Why use someone else's code when you can build your own? I created a Transformer neural network from the ground up in PyTorch—think of it as making your own masala from raw spices instead of buying a ready mix. It was tough, but now I know every ingredient!</p>
+            <a href="https://github.com/shakuvish" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="assets/img/fallback.jpg" alt="Video Sentiment SaaS" />
+          </div>
+          <div class="project-info">
+            <h3>Video Sentiment SaaS</h3>
+            <p>Ever wanted to know if a YouTube video is more "happy" or "meh"? I built a full-stack system that watches videos, listens to the audio, and reads the subtitles to figure out the mood—like a digital movie critic with no bias!</p>
+            <a href="https://github.com/shakuvish" target="_blank">View Project</a>
+          </div>
+        </div>
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="assets/img/fallback.jpg" alt="Network Monitoring Tool" />
+          </div>
+          <div class="project-info">
+            <h3>Network Monitoring Tool</h3>
+            <p>Picture this: You're at a college fest, and the WiFi is slower than a Delhi traffic jam. My tool keeps an eye on the network, tracks every device, and sends alerts if things go haywire—so the next time, the DJ's playlist won't buffer!</p>
+            <a href="https://github.com/shakuvish" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Using a duplicate ID "skills" to match the original template's CSS -->
+  <div id="skills">
+    <h2 class="heading">Technical Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>C</li>
+      <li>PyTorch</li>
+      <li>NumPy</li>
+      <li>Pandas</li>
+      <li>SciPy</li>
+      <li>Scikit-learn</li>
+      <li>OpenCV</li>
+      <li>Flask</li>
+      <li>HTML/CSS/JS</li>
+      <li>SQL & MySQL</li>
+      <li>Linux</li>
+      <li>Git & GitHub</li>
+      <li>Jupyter</li>
+      <li>AWS</li>
+      <li>LAMP Stack</li>
+    </ul>
+  </div>
+
+  <div id="certs" class="background-alt">
+    <h2 class="heading">Certifications & Training</h2>
+    <div class="x-education-block shadow">
+        <h3>IASNLP Summer School 2025 @ IIIT Hyderabad</h3>
+    </div>
+    <div class="x-education-block shadow">
+        <h3>ACM Summer School 2024 @ SRM University</h3>
+    </div>
+    <div class="x-education-block shadow">
+        <h3>Machine Learning & Deep Learning Specializations @ Coursera</h3>
+    </div>
+    <div class="x-education-block shadow">
+        <h3>Remote Sensing & GIS @ ISRO</h3>
+    </div>
+  </div>
+
+  <div id="contact-me">
+    <div id="contact-me-overlay">
+      <h2 class="heading">Get in Touch</h2>
+      <div id="contact-me-form">
+        <form method="POST" action="mailto:shakuvish07@gmail.com" enctype="text/plain">
+          <input type="text" class="shadow" name="name" placeholder="Your Name" required>
+          <input type="email" class="shadow" name="email" placeholder="Your Email" required>
+          <textarea name="message" class="shadow" placeholder="Your message..." required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <!-- This closing span tag is intentionally placed here to close the span from the hero section, matching the original template's structure. -->
+    </span>
+    <div class="mobile">
+      <p>
+        Designed & Built by Shashank Vishwakarma
+      </p>
+      <div class="social-mob">
+        <a href="https://github.com/shakuvish" target="_blank">
+          <img src="assets/img/icons/GitHub.png" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/shakuvish" target="_blank">
+          <img src="assets/img/icons/LinkedIn.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:shakuvish07@gmail.com" target="_blank">
+          <img src="assets/img/icons/Mail.png" alt="Mail">
+        </a>
+      </div>
+    </div>
+    <span id="to-top">
+      <div class="up-arrow floating-arrow">
+        <a href="#top">
+          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </span>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Cat Animation: Fixed at bottom right corner -->
+  <div id="cat-animation">
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Animated Cat" style="width:90px; height:auto;" />
+  </div>
+
+  <!-- Animated Cat running along the bottom -->
+  <div id="cat-runner">
+    <img src="assets/img/cat.webp" alt="Running Cat" id="cat-runner-img" />
+  </div>
+</body>
+</html>
